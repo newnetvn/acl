@@ -1,6 +1,7 @@
 {
     "name": "newnet/acl",
     "description": "Newnet ACL",
+    "license": "MIT",
     "keywords": [
         "newnet"
     ],
@@ -10,8 +11,8 @@
     },
     "authors": [
         {
-            "name": "Kim Nguyen",
-            "email": "kimtrien@gmail.com"
+            "name": "Newnet",
+            "email": "support@newnet.vn"
         }
     ],
     "type": "library",
@@ -36,9 +37,6 @@
             "aliases": {
                 "Permission": "Newnet\\Acl\\Facades\\Permission"
             }
-        },
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
         }
     },
     "minimum-stability": "dev",
