@@ -1,0 +1,46 @@
+{
+    "name": "newnet/acl",
+    "description": "Newnet ACL",
+    "keywords": [
+        "newnet"
+    ],
+    "homepage": "https://newnet.vn",
+    "support" : {
+        "email" : "support@newnet.vn"
+    },
+    "authors": [
+        {
+            "name": "Kim Nguyen",
+            "email": "kimtrien@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "newnet/media": "*",
+        "laravel/sanctum": "^2.0|^3.0",
+        "laravel/ui": "^2.0|^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Newnet\\Acl\\": "/src"
+        },
+        "files": [
+            "helpers/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Newnet\\Acl\\AclServiceProvider"
+            ],
+            "aliases": {
+                "Permission": "Newnet\\Acl\\Facades\\Permission"
+            }
+        },
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
